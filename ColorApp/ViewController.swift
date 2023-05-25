@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     }
     
     // MARK: IBActions
-    // Не могу понять. Если просто сделать labelRed.text? += fromFloatToString(sliderRed) то вместо цифр от 0 до 255 начнутся фулл рандом цифры. В чем дело понять не могу. Как будто они просто плюсуются и все
     @IBAction func sliderRedAction() {
         labelRed.text = fromFloatToString(sliderRed)
         setupView()
@@ -62,14 +61,12 @@ class ViewController: UIViewController {
         sliderRed.maximumValue = 255
         sliderRed.tintColor = .red
     }
-    
     private func setupSliderGreen() {
         sliderGreen.value = 0
         sliderGreen.minimumValue = 0
         sliderGreen.maximumValue = 255
         sliderGreen.tintColor = .green
     }
-    
     private func setupSliderBlue() {
         sliderBlue.value = 0
         sliderBlue.minimumValue = 0
@@ -89,7 +86,6 @@ class ViewController: UIViewController {
             green: CGFloat(sliderGreen.value),
             blue: CGFloat(sliderBlue.value))
     }
-    // Сделал сам, на основе вчерашнего митинга. Но не понимаю как она работает... Но работает же. Все в гугле предлагают этот вариант, потому его и заюзал за неимением другого
     private func fromFloatToString(_ slider: UISlider) -> String {
         return String(format: "%.f", slider.value)
     }
