@@ -68,7 +68,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="ozn-pS-l9D">
-                                <rect key="frame" x="71.666666666666686" y="223" width="250" height="134"/>
+                                <rect key="frame" x="71.666666666666686" y="223" width="249.99999999999994" height="134"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="y7x-g2-Tor">
                                         <rect key="frame" x="-2" y="0.0" width="254" height="31"/>
@@ -76,7 +76,7 @@
                                             <action selector="sliderRedAction" destination="BYZ-38-t0r" eventType="valueChanged" id="AtF-Ii-4Mt"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0l5-j4-ga1">
+                                    <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0l5-j4-ga1">
                                         <rect key="frame" x="-2" y="52" width="254" height="31"/>
                                         <connections>
                                             <action selector="sliderGreenAction" destination="BYZ-38-t0r" eventType="valueChanged" id="GFH-Zi-cLR"/>
@@ -113,6 +113,7 @@
                             <constraint firstItem="LSB-ni-ryj" firstAttribute="centerX" secondItem="ozn-pS-l9D" secondAttribute="centerX" id="N7l-wi-BhZ"/>
                             <constraint firstItem="ozn-pS-l9D" firstAttribute="centerY" secondItem="W8l-Bd-pXv" secondAttribute="centerY" id="Tq9-tq-y9T"/>
                             <constraint firstItem="ozn-pS-l9D" firstAttribute="width" secondItem="W8l-Bd-pXv" secondAttribute="width" multiplier="6.04839" id="Vgu-eO-38a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LT1-gS-P5V" secondAttribute="trailing" constant="16" id="aPg-Sa-EC2"/>
                             <constraint firstItem="ozn-pS-l9D" firstAttribute="width" secondItem="uih-c7-T8a" secondAttribute="width" multiplier="6.04839" id="aZ9-Yu-hPT"/>
                             <constraint firstItem="W8l-Bd-pXv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16.000000000000004" id="dIn-KI-ZM4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uih-c7-T8a" secondAttribute="trailing" constant="16.666666666666686" id="eJ6-WF-z4X"/>
