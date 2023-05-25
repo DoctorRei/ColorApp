@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		E9808F8A2A1F983D00B3A0EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9808F892A1F983D00B3A0EB /* AppDelegate.swift */; };
 		E9808F8C2A1F983D00B3A0EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9808F8B2A1F983D00B3A0EB /* SceneDelegate.swift */; };
-		E9808F8E2A1F983D00B3A0EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9808F8D2A1F983D00B3A0EB /* ViewController.swift */; };
 		E9808F912A1F983D00B3A0EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9808F8F2A1F983D00B3A0EB /* Main.storyboard */; };
 		E9808F942A1F983D00B3A0EB /* ColorApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9808F922A1F983D00B3A0EB /* ColorApp.xcdatamodeld */; };
 		E9808F962A1F983E00B3A0EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9808F952A1F983E00B3A0EB /* Assets.xcassets */; };
 		E9808F992A1F983E00B3A0EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9808F972A1F983E00B3A0EB /* LaunchScreen.storyboard */; };
+		E9808FA02A1FA76900B3A0EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9808F8D2A1F983D00B3A0EB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,9 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9808F8E2A1F983D00B3A0EB /* ViewController.swift in Sources */,
 				E9808F942A1F983D00B3A0EB /* ColorApp.xcdatamodeld in Sources */,
 				E9808F8A2A1F983D00B3A0EB /* AppDelegate.swift in Sources */,
+				E9808FA02A1FA76900B3A0EB /* ViewController.swift in Sources */,
 				E9808F8C2A1F983D00B3A0EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
