@@ -18,16 +18,23 @@ class ViewController: UIViewController {
     @IBOutlet var sliderRed: UISlider!
     @IBOutlet var sliderGreen: UISlider!
     @IBOutlet var sliderBlue: UISlider!
+    @IBOutlet var labelStaticRed: UILabel!
+    @IBOutlet var labelStaticGreen: UILabel!
+    @IBOutlet var labelStaticBlue: UILabel!
+    @IBOutlet var buttonReset: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLables()
         setupSliderRed()
         setupSliderGreen()
         setupSliderBlue()
-       
+        setupStaticLables()
+        buttonReset.setTitle("RESET", for: .normal)
     }
-
+    
     // MARK: IBActions
+    // Не могу понять. Если просто сделать labelRed.text? += fromFloatToString(sliderRed) то вместо цифр от 0 до 255 начнутся фулл рандом цифры. В чем дело понять не могу. Как будто они просто плюсуются и все
     @IBAction func sliderRedAction() {
         labelRed.text = fromFloatToString(sliderRed)
         setupView()
@@ -40,7 +47,14 @@ class ViewController: UIViewController {
         labelBlue.text = fromFloatToString(sliderBlue)
         setupView()
     }
-
+    @IBAction func tapResetButton() {
+        sliderRed.value = 0
+        sliderGreen.value = 0
+        sliderBlue.value = 0
+        setupView()
+        setupLables()
+    }
+    
     // MARK: Private Methods
     private func setupSliderRed() {
         sliderRed.value = 0
@@ -50,35 +64,54 @@ class ViewController: UIViewController {
     }
     
     private func setupSliderGreen() {
+        sliderGreen.value = 0
         sliderGreen.minimumValue = 0
         sliderGreen.maximumValue = 255
         sliderGreen.tintColor = .green
     }
     
     private func setupSliderBlue() {
+        sliderBlue.value = 0
         sliderBlue.minimumValue = 0
         sliderBlue.maximumValue = 255
         sliderBlue.tintColor = .blue
     }
-    
-     private func setupColor(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
-        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
-      }
-    
+    private func setupColor(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
+        return UIColor(
+            red: red/255,
+            green: green/255,
+            blue: blue/255,
+            alpha: 1)
+    }
     private func setupView() {
         mainView.backgroundColor = setupColor(
             red: CGFloat(sliderRed.value),
             green: CGFloat(sliderGreen.value),
             blue: CGFloat(sliderBlue.value))
     }
-    
-    // Сделал сам, на основе вчерашнего митинга. Но не понимаю как она работает.
-    // ... Но работает же. Все в гугле предлагают этот вариант, потому его и заюзал
+    // Сделал сам, на основе вчерашнего митинга. Но не понимаю как она работает... Но работает же. Все в гугле предлагают этот вариант, потому его и заюзал за неимением другого
     private func fromFloatToString(_ slider: UISlider) -> String {
-       return String(format: "%.f", slider.value)
+        return String(format: "%.f", slider.value)
     }
-
-    
+    private func setupLables() {
+        labelRed.text = "RGB"
+        labelRed.font = .systemFont(ofSize: 14)
+        labelStaticRed.text = "Red"
+        labelGreen.text = "RGB"
+        labelGreen.font = .systemFont(ofSize: 14)
+        labelStaticGreen.text = "Green"
+        labelBlue.text = "RGB"
+        labelBlue.font = .systemFont(ofSize: 14)
+        labelStaticBlue.text = "Blue"
+    }
+    private func setupStaticLables() {
+        labelStaticRed.text = "Red"
+        labelStaticRed.font = .systemFont(ofSize: 14)
+        labelStaticGreen.text = "Green"
+        labelStaticGreen.font = .systemFont(ofSize: 14)
+        labelStaticBlue.text = "Blue"
+        labelStaticBlue.font = .systemFont(ofSize: 14)
+    }
 }
 
 
