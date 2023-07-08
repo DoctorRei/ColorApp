@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
     
     // MARK: IBOutlets
     @IBOutlet var mainView: UIView!

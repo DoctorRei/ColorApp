@@ -13,19 +13,23 @@
 		E9808F942A1F983D00B3A0EB /* ColorApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9808F922A1F983D00B3A0EB /* ColorApp.xcdatamodeld */; };
 		E9808F962A1F983E00B3A0EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9808F952A1F983E00B3A0EB /* Assets.xcassets */; };
 		E9808F992A1F983E00B3A0EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9808F972A1F983E00B3A0EB /* LaunchScreen.storyboard */; };
-		E9808FA02A1FA76900B3A0EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9808F8D2A1F983D00B3A0EB /* ViewController.swift */; };
+		E9808FA02A1FA76900B3A0EB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9808F8D2A1F983D00B3A0EB /* SettingsViewController.swift */; };
+		E9A076A42A588010003C0074 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A076A32A588010003C0074 /* Model.swift */; };
+		E9A076A72A58808F003C0074 /* ColoredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A076A62A58808F003C0074 /* ColoredViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9808F862A1F983D00B3A0EB /* ColorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9808F892A1F983D00B3A0EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9808F8B2A1F983D00B3A0EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9808F8D2A1F983D00B3A0EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9808F8D2A1F983D00B3A0EB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E9808F902A1F983D00B3A0EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9808F932A1F983D00B3A0EB /* ColorApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ColorApp.xcdatamodel; sourceTree = "<group>"; };
 		E9808F952A1F983E00B3A0EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9808F982A1F983E00B3A0EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9808F9A2A1F983E00B3A0EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A076A32A588010003C0074 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E9A076A62A58808F003C0074 /* ColoredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,42 @@
 		E9808F882A1F983D00B3A0EB /* ColorApp */ = {
 			isa = PBXGroup;
 			children = (
-				E9808F892A1F983D00B3A0EB /* AppDelegate.swift */,
-				E9808F8B2A1F983D00B3A0EB /* SceneDelegate.swift */,
-				E9808F8D2A1F983D00B3A0EB /* ViewController.swift */,
-				E9808F8F2A1F983D00B3A0EB /* Main.storyboard */,
+				E9A716892A594B5200547D00 /* App */,
+				E9A716882A594B3B00547D00 /* ViewVontrollers */,
+				E9A076A52A588039003C0074 /* Settings */,
+				E9A076A32A588010003C0074 /* Model.swift */,
 				E9808F952A1F983E00B3A0EB /* Assets.xcassets */,
-				E9808F972A1F983E00B3A0EB /* LaunchScreen.storyboard */,
+			);
+			path = ColorApp;
+			sourceTree = "<group>";
+		};
+		E9A076A52A588039003C0074 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
 				E9808F9A2A1F983E00B3A0EB /* Info.plist */,
 				E9808F922A1F983D00B3A0EB /* ColorApp.xcdatamodeld */,
 			);
-			path = ColorApp;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E9A716882A594B3B00547D00 /* ViewVontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				E9808F8D2A1F983D00B3A0EB /* SettingsViewController.swift */,
+				E9A076A62A58808F003C0074 /* ColoredViewController.swift */,
+			);
+			path = ViewVontrollers;
+			sourceTree = "<group>";
+		};
+		E9A716892A594B5200547D00 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E9808F892A1F983D00B3A0EB /* AppDelegate.swift */,
+				E9808F8B2A1F983D00B3A0EB /* SceneDelegate.swift */,
+				E9808F8F2A1F983D00B3A0EB /* Main.storyboard */,
+				E9808F972A1F983E00B3A0EB /* LaunchScreen.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A076A42A588010003C0074 /* Model.swift in Sources */,
 				E9808F942A1F983D00B3A0EB /* ColorApp.xcdatamodeld in Sources */,
 				E9808F8A2A1F983D00B3A0EB /* AppDelegate.swift in Sources */,
-				E9808FA02A1FA76900B3A0EB /* ViewController.swift in Sources */,
+				E9A076A72A58808F003C0074 /* ColoredViewController.swift in Sources */,
+				E9808FA02A1FA76900B3A0EB /* SettingsViewController.swift in Sources */,
 				E9808F8C2A1F983D00B3A0EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4JT48W22P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorApp/Info.plist;
+				INFOPLIST_FILE = ColorApp/Settings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4JT48W22P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorApp/Info.plist;
+				INFOPLIST_FILE = ColorApp/Settings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
